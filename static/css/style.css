@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 255, 255, 0.5);
+    width: 350px;
+    animation: pulse 2s infinite;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #00ffcc;
+    text-shadow: 0 0 8px #00ffcc, 0 0 15px #00ffcc, 0 0 20px #00ffcc;
+    font-size: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #ff00ff;
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff;
+    font-size: 14px;
+}
+
+input {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #00ffcc;
+    border-radius: 4px;
+    background: #141e30;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    box-shadow: inset 0 0 10px #00ffcc;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 20px #00ffcc, inset 0 0 15px #00ffcc;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background: linear-gradient(45deg, #ff00ff, #00ffcc);
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 255, 255, 0.5), 0 0 10px rgba(255, 0, 255, 0.5);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 255, 255, 0.7), 0 0 15px rgba(255, 0, 255, 0.7);
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 255, 255, 0.5);
+    }
+    50% {
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5), 0 0 25px rgba(0, 255, 255, 1);
+    }
+}
